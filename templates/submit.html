@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Congratulations!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: #fff;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h2 {
+      color: #2b2d42;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: #4cafef;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #1e88e5;
+    }
+
+    .follow-label {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .follow-btn {
+      display: inline-block;
+      margin-top: 10px;
+      background: #E1306C; /* Instagram pink */
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .follow-btn:hover {
+      background: #C13584; /* darker pink */
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>🎉 Congratulations! 🎉</h2>
+    <p>Your entry has been submitted successfully.</p>
+    <a href="/" class="btn">Submit Another Entry</a>
+
+    <div class="follow-label">📢 Follow our Instagram to view the result.</div>
+    <a href="insta.html" target="_blank" class="follow-btn">Follow on Instagram</a>
+  </div>
+</body>
+</html>
