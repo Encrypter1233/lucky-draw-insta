@@ -3,97 +3,114 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ Mobile scaling -->
     <meta property="og:title" content="LUCKY DRAW 😃😍">
-    <meta property="og:description" content="🎁 “Your chance to grab amazing prizes is here!”">
+    <meta property="og:description" content="🎁 Your chance to grab amazing prizes is here!">
     <meta property="og:image"
         content="https://imgs.search.brave.com/gRzVI4ixwFeyeLxSQr-IHl9_Nv3PL1yAgBANzLH2bsA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvcmVkLWdpZnQt/Ym94LW9wZW5pbmct/d2l0aC1jb25mZXR0/aS1leHBsb2Rpbmct/b3V0Xzk4NDAyLTIw/MzU0OC5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQwJnE9ODA">
-</head>
-<title>Lucky Draw Form</title>
-<style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container {
-        background: #fff;
-        padding: 30px 40px;
-        border-radius: 15px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        max-width: 400px;
-        width: 100%;
-        text-align: center;
-        animation: fadeIn 0.8s ease-in-out;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-        color: #333;
-        font-size: 24px;
-    }
-
-    label {
-        display: block;
-        text-align: left;
-        margin: 10px 0 5px;
-        font-weight: bold;
-        color: #444;
-    }
-
-    input[type="text"],
-    input[type="number"],
-    input[type="email"] {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 14px;
-        transition: all 0.3s ease;
-    }
-
-    input[type="text"]:focus,
-    input[type="number"]:focus,
-    input[type="email"]:focus {
-        border-color: #ff6b6b;
-        outline: none;
-        box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
-    }
-
-    input[type="submit"] {
-        margin-top: 20px;
-        background: #ff6b6b;
-        color: #fff;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 8px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        width: 100%;
-    }
-
-    input[type="submit"]:hover {
-        background: #e63946;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
+    <title>Lucky Draw Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        to {
-            opacity: 1;
-            transform: translateY(0);
+        .container {
+            background: #fff;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 360px;
+            /* ✅ Perfect for 9:16 mobile */
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+            box-sizing: border-box;
         }
-    }
-</style>
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 22px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"] {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus {
+            border-color: #ff6b6b;
+            outline: none;
+            box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background: #ff6b6b;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background: #e63946;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ✅ Extra Mobile Tweaks */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
